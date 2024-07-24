@@ -1,0 +1,14 @@
+.tab-main {
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+.tab-sub {
+    font-size: 20px;
+    margin-bottom: 5px;
+    padding: 11px;
+}
+
+.tab-sub:nth-child(odd) {
+    background: #D1D1D1;
+}

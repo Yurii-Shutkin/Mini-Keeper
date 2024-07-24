@@ -1,0 +1,10 @@
+.table-desc-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.table-price {
+    font-size: 12px;
+    font-weight: normal;
+}

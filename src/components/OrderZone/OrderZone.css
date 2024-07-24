@@ -1,0 +1,55 @@
+.orderZone {
+    position: absolute;
+    display: flex;
+    align-items: stretch;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* height: 100vh; */
+    z-index: 10001;
+    height: 150%;
+}
+
+.opasityZone {
+    width: 30%;
+    background-color: #000;
+    opacity: .53;
+    /* height: auto; */
+    /* align-self: stretch; */
+}
+
+.orderZone-menu {
+    background-color: #fff;
+    color: #000;
+    flex: auto;
+    position: fixed;
+    overflow-y: auto;
+    right: 0;
+    width: 75%;
+    height: 100%;
+    padding: 20px 0 0 10px;
+}
+
+.orderZone-back {
+    border: none;
+    background: transparent;
+    font-size: 24px;
+    padding: 3px 5px;
+    margin-bottom: 30px;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+.orderZone-categories {
+    list-style: none;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.orderZone-categories li {
+    padding: 6px 10px;
+}
+
+.orderZone-categories li:nth-child(odd) {
+    background-color: #D9D9D9;
+}
