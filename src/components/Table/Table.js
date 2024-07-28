@@ -5,14 +5,14 @@ function Table( {table, onClick, activeZone} ) {
   const [status, setStatus] = useState('');
 
   useEffect(() => {
-    setStatus(table.status)
-    
+    setStatus(table.status);
   }, [table, activeZone, table.order])
   return (
     <div
-      className={table.order.length ? 'table occupied' : 'table available'}
+      className={table.order.length && table.status === 'Закрыт' ? 'table closed' : 'table available' && table.status === 'Активен' ? 'table occupied' : 'table available'}
       onClick={() => onClick(table)}
     >
+      {table.status === 'Закрыт' ? (<p style={{fontSize: '14px'}}>{table.position}</p>): null}
       <p className='table-number'>
         Стол {table.number}
       </p>

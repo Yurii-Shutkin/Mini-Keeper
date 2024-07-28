@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import TableMap from '../TableMap/TableMap';
-import './TableStore.css'
+import './ActiveTables.css'
 
 
-function TableStore({ activeTables, activeZone, onTableClick}) {
+function ActiveTables({ activeTables, activeZone, onTableClick}) {
   const [currentTables, setCurrentTables] = useState([]);
   useEffect(() => {
     setCurrentTables(activeTables)
@@ -23,4 +23,4 @@ function TableStore({ activeTables, activeZone, onTableClick}) {
   )
 }
 
-export default TableStore;
+export default ActiveTables;

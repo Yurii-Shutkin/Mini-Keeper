@@ -42,7 +42,15 @@
   .table.occupied .table-status {
     color: #D158D3;
   }
-  
+
+  .table.closed {
+    border-bottom: solid 3px #8E8E8E;
+  }
+
+  .table.closed .table-status {
+    color: #8E8E8E;
+  }
+
   .table-status {
     font-size: 9px;
   }

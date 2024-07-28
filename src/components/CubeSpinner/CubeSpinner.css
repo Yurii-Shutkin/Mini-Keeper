@@ -1,0 +1,38 @@
+.cube-spinner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.cube {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  transform-style: preserve-3d;
+  animation: rotate 2s infinite linear;
+}
+
+.side {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(255, 0, 0, 0.3);
+  border: 1px solid rgba(255, 0, 0, 0.5);
+}
+
+.cube-front  { transform: translateZ(25px); }
+.cube-back   { transform: rotateY(180deg) translateZ(25px); }
+.cube-left   { transform: rotateY(-90deg) translateZ(25px); }
+.cube-right  { transform: rotateY(90deg) translateZ(25px); }
+.cube-top    { transform: rotateX(90deg) translateZ(25px); }
+.cube-bottom { transform: rotateX(-90deg) translateZ(25px); }
+
+@keyframes rotate {
+  from {
+    transform: rotateX(0) rotateY(0);
+  }
+  to {
+    transform: rotateX(360deg) rotateY(360deg);
+  }
+}

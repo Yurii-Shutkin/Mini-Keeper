@@ -1,7 +1,6 @@
 import React from 'react'
 import './OrderZone.css'
 import JsonTabs from '../JsonTabs/JsonTabs';
-// import JsonTabs2 from '../JsonTabs2/JsonTabs2';
 
 function OrderZone({dataMenu, onBack, orderArray, orderStateFn}) {
 
@@ -24,9 +23,6 @@ function OrderZone({dataMenu, onBack, orderArray, orderStateFn}) {
             array={orderArray}
             fn={orderStateFn}
           />
-          {/* <JsonTabs2 
-            order={orderArray}
-          /> */}
         </ul>
       </div>
     </div>

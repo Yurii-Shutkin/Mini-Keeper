@@ -43,7 +43,6 @@ const JsonTabs = ({ data, depth = 0, array, fn }) => {
   const onClickTabHandle = (obj) => {
       // setCurrentOrder(array)
       addToOrder(obj, fn)
-      console.log(obj)
       // obj.quantity += 1;
       // fn([...array, obj])
       // console.log(array)

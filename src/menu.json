@@ -210,7 +210,7 @@
             {
               "id": 32,
               "name": "Petes Pure Pinot Noir",
-              "price": "620",
+              "price": "680",
               "quantity": 1,
               "alc": true
             },
@@ -224,14 +224,14 @@
             {
               "id": 34,
               "name": "Shabo Gr Res Cabernet",
-              "price": "768",
+              "price": "750",
               "quantity": 1,
               "alc": true
             },
             {
               "id": 35,
               "name": "Shabo Gr Res Chardonnai",
-              "price": "780",
+              "price": "750",
               "quantity": 1,
               "alc": true
             },
@@ -245,14 +245,42 @@
             {
               "id": 37,
               "name": "Massotina Prosecco",
+              "price": "690",
+              "quantity": 1,
+              "alc": true
+            },
+            {
+              "id": 1001,
+              "name": "Cezari, Pinot Grigio delle Venezie",
               "price": "620",
               "quantity": 1,
               "alc": true
             },
             {
-              "id": 38,
-              "name": "Колонiст Бiсер",
-              "price": "880",
+              "id": 1002,
+              "name": "Hugel, Gentil",
+              "price": "620",
+              "quantity": 1,
+              "alc": true
+            },
+            {
+              "id": 1003,
+              "name": "Marlborough Sun",
+              "price": "680",
+              "quantity": 1,
+              "alc": true
+            },
+            {
+              "id": 1004,
+              "name": "Weinert, Carrascal Malbec",
+              "price": "900",
+              "quantity": 1,
+              "alc": true
+            },
+            {
+              "id": 1005,
+              "name": "Diomede, Фолiя",
+              "price": "740",
               "quantity": 1,
               "alc": true
             }
