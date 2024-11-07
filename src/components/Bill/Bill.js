@@ -304,9 +304,9 @@ function Bill({ orders, activeZone, setSelectedTableFn, currentTable, zonesState
 
   const cardClosedHandler = () => {
     setSavedOrder(order);
-    const closedTable = { ...currentTable, status: 'Закрыт', order: order };
-    setCardClosedTablesFn([...cardClosedTables, closedTable]);
-    set('cardClosedTables', [...cardClosedTables, closedTable]);
+    const closedTable2 = { ...currentTable, status: 'Закрыт', order: order };
+    setCardClosedTablesFn([...cardClosedTables, closedTable2]);
+    set('cardClosedTables', [...cardClosedTables, closedTable2]);
     setModal(false);
     onCheckHandler();
   };
@@ -360,6 +360,53 @@ function Bill({ orders, activeZone, setSelectedTableFn, currentTable, zonesState
     }
   };
 
+  // const onAddLocalHandler = (num) => {
+  //   setLocalModal(true);
+  //   const newZones = { ...zones };
+  //   newZones[activeZone][currentTable.number - 1].lokal = num;
+  //   zonesState(newZones);
+  //   set(zones[activeZone][currentTable.number - 1].lokal, num).then(() => {
+  //     console.log(zones);
+  //   }).catch((err) => {
+  //     console.error('Ошибка сохранения в IndexedDB:', err);
+  //   });
+  // }
+
+  // const onAddLocalHandler = (num) => {
+  //   console.log("Начало функции onAddLocalHandler");
+  //   console.log("Исходное состояние zones:", zones);
+  //   console.log("activeZone:", activeZone);
+  //   console.log("currentTable.lokal:", currentTable.lokal);
+  
+  //   const newZones = { ...zones };
+  //   console.log("Копия состояния newZones до изменения:", newZones);
+  
+  //   if (newZones[activeZone] && typeof newZones[activeZone] === 'object') {
+  //     newZones(zones[activeZone][currentTable.lokal]) = num;
+  //     console.log("Копия состояния newZones после изменения:", newZones);
+      
+  //     // Обновление состояния
+  //     zonesState(newZones);
+  //     console.log("Состояние обновлено. Новое состояние zones:", newZones);
+  
+  //     // Сохранение обновленного состояния в IndexedDB
+  //     set(`zones${[activeZone]}${[currentTable.lokal]}`, num).then(() => {
+  //       console.log("Сохранено в IndexedDB:", `zones${[activeZone]}${[currentTable.lokal]}`, num);
+  //       console.log(zones[activeZone][currentTable.id - 1].lokal);
+  //     }).catch((err) => {
+  //       console.error('Ошибка сохранения в IndexedDB:', err);
+  //     });
+  //   } else {
+  //     console.error('Некорректная структура данных для activeZone или currentTable.local');
+  //   }
+  // };
+  
+  // // Пример использования useEffect для проверки обновленного состояния
+  // useEffect(() => {
+  //   console.log("Состояние обновилось:", zones);
+  // }, [zones]);
+  
+
   const setModalHandler = () => setModal(true);
   const closeModalHandler = () => setModal(false);
   const keepModalHandler = (event) => event.stopPropagation();
@@ -398,6 +445,13 @@ function Bill({ orders, activeZone, setSelectedTableFn, currentTable, zonesState
       </div>
       <div className={currentTable.status === 'Закрыт' ? 'unvisible' : "bill-buttons bill-buttons right"}>
         <button className={!changeMode ? 'bill-check bill-btn visible' : 'bill-check bill-btn unvisible'} onClick={setModalHandler}>Рассчитать</button>
+        {/* <button 
+          className='bill-btn'
+          onClick={() => onAddLocalHandler(443654)}
+        >
+          Добавить Local
+        </button>
+        <p>{currentTable.lokal}</p> */}
       </div>
       {orderMode && (
         <OrderZone onBack={onBackClickHandle} dataMenu={menuData.menu} orderArray={order} orderStateFn={setOrder} />
