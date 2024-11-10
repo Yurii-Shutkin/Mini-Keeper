@@ -66,16 +66,16 @@ function Bill({ orders, activeZone, setSelectedTableFn, currentTable, zonesState
       func([...order, newFood]);
     } 
     if (emptyOrder) {
-      func([...order.filter(item => item.quantity !== 0)])
+      func([...order.filter(item => item.quantity !== 0 && item.quantity >= 0)])
     }
   };
 
-  const onMinusCliclHandle = (obj) => {
+  const onMinusClickHandle = (obj) => {
     obj.quantity -= 1;
     addToOrder(obj, setOrder);
   };
 
-  const onPlusCliclHandle = (obj) => {
+  const onPlusClickHandle = (obj) => {
     obj.quantity += 1;
     addToOrder(obj, setOrder);
   };
@@ -132,9 +132,9 @@ function Bill({ orders, activeZone, setSelectedTableFn, currentTable, zonesState
           <div className="bill-item">
             <li className='bill-name'>{item.name}</li>
             <div className="bill-quantity">
-              <button className={changeMode ? 'bill-quant-reg minus' : 'bill-quant-reg minus index-1'} onClick={() => onMinusCliclHandle(item)}>-</button>
-              <div className="bill-quantity-info">{item.quantity}</div>
-              <button className={changeMode ? 'bill-quant-reg plus visible' : 'bill-quant-reg plus index-1'} onClick={() => onPlusCliclHandle(item)}>+</button>
+              <button className={changeMode ? 'bill-quant-reg minus' : 'bill-quant-reg minus index-1'} onClick={() => onMinusClickHandle(item)}>-</button>
+              <div className="bill-quantity-info">{item.quantity === 0 ? item.quantity += 1 : item.quantity}</div>
+              <button className={changeMode ? 'bill-quant-reg plus visible' : 'bill-quant-reg plus index-1'} onClick={() => onPlusClickHandle(item)}>+</button>
             </div>
             <div className="bill-price">{item.price * item.quantity}</div>
           </div>
