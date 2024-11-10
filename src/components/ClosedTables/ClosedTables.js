@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import './ClosedTables.css'
 import TableMap from '../TableMap/TableMap';
-import { set, del } from 'idb-keyval';
+import { del } from 'idb-keyval';
 
 
 function ClosedTables({cashClosedTables, cardClosedTables, cashClosedTablesFn, cardClosedTablesFn, onTableClick, activeZone}) {
@@ -25,6 +25,7 @@ function ClosedTables({cashClosedTables, cardClosedTables, cashClosedTablesFn, c
 
   useEffect(() => {
     setCurrentCashTables(cashClosedTables)
+    console.log(cashClosedTables)
     setCurrentCardTables(cardClosedTables)
 
   }, [cashClosedTables, cardClosedTables])
