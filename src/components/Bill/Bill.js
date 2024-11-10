@@ -64,7 +64,7 @@ function Bill({ orders, activeZone, setSelectedTableFn, currentTable, zonesState
       func(order.map(item => item.id !== newFood.id ? item : { ...item, quantity: newFood.quantity }));
     } else {
       func([...order, newFood]);
-    } 
+    }
     if (emptyOrder) {
       func([...order.filter(item => item.quantity !== 0 && item.quantity >= 0)])
     }
@@ -87,11 +87,10 @@ function Bill({ orders, activeZone, setSelectedTableFn, currentTable, zonesState
       updatedZones[activeZone][currentTable.number - 1].lokal = lokalNumber;
       updatedZones[activeZone][currentTable.number - 1].order = order;
       zonesState(updatedZones);
-      set('zones', updatedZones).then(() => console.log('Setted'));
+      set('zones', updatedZones);
       setChangeMode(false);
       setLokalModal(false);
       setFocus(false);
-      console.log(order)
     }
   };
 

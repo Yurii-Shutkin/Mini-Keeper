@@ -25,7 +25,6 @@ function ClosedTables({cashClosedTables, cardClosedTables, cashClosedTablesFn, c
 
   useEffect(() => {
     setCurrentCashTables(cashClosedTables)
-    console.log(cashClosedTables)
     setCurrentCardTables(cardClosedTables)
 
   }, [cashClosedTables, cardClosedTables])

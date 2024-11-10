@@ -178,9 +178,6 @@ function App() {
     setActiveZone(zone);
     setSelectedTable(null);
     setActiveBottomTab('');
-    console.log(activeTables);
-    console.log(cashClosedTables);
-    console.log(cardClosedTables);
   }
 
   const handleTableClick = (table) => {
@@ -190,7 +187,6 @@ function App() {
 
   const handleBackToTableMap = () => {
     setSelectedTable(null);
-    console.log('click')
   };
 
   return (
