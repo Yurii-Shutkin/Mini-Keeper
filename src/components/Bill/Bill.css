@@ -130,6 +130,7 @@
 
 .bill-summary {
     margin-top: 50px;
+    margin-bottom: 20px;
 }
 
 .bill-summary span {
@@ -150,6 +151,11 @@
 
 .bill-sum {
     font-weight: bold;
+}
+
+.bill-lokal {
+    margin-top: 30px;
+    color: rgb(234, 64, 64);
 }
 
 .bill-modal-wrap {
@@ -194,4 +200,22 @@
     border: none;
     background: transparent;
     padding: 10px;
+}
+
+.lokal-wrap {
+    display: flex;
+    margin-left: auto;
+    flex-direction: column;
+}
+
+.lokal-btn {
+    padding: 10px;
+    color: rgb(234, 64, 64);
+    border-color: rgb(234, 64, 64);
+}
+
+.lokal-input {
+    margin-top: 10px;
+    outline: none;
+    padding: 5px 0;
 }

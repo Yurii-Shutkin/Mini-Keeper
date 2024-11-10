@@ -216,6 +216,7 @@ function App() {
             setCashClosedTables={setCashClosedTables}
             cardClosedTables={cardClosedTables}
             setCardClosedTables={setCardClosedTables}
+            lokal={selectedTable.lokal}
           />
         ) : 
           !activeBottomTab ? (
@@ -245,6 +246,7 @@ function App() {
             cardClosedTablesFn={setCardClosedTables}
             activeZone={activeZone}
             onTableClick={handleTableClick}
+            zones= {zones}
           />
         ) : null}
         <TableStoreTabs

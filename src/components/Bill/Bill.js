@@ -272,13 +272,18 @@ import menuData from '../../menu.json';
 import OrderZone from '../OrderZone/OrderZone';
 import { get, set } from 'idb-keyval';
 
-function Bill({ orders, activeZone, setSelectedTableFn, currentTable, zonesState, cashClosedTables, setCashClosedTablesFn, cardClosedTables, setCardClosedTablesFn }) {
+function Bill({ orders, activeZone, setSelectedTableFn, currentTable, zonesState, cashClosedTables, setCashClosedTablesFn, cardClosedTables, setCardClosedTablesFn, lokal }) {
   const [orderMode, setOrderMode] = useState(false);
   const [order, setOrder] = useState([]);
   const [changeMode, setChangeMode] = useState(true);
   const [modal, setModal] = useState(false);
   const [savedOrder, setSavedOrder] = useState([]);
   const [zones, setZones] = useState(null);
+  const [lokalModal, setLokalModal] = useState(false);
+  const [lokalNumber, setLokalNumber] = useState(null);
+  const [focus, setFocus] = useState(false);
+
+
 
   useEffect(() => {
     if (orders) {
@@ -287,15 +292,23 @@ function Bill({ orders, activeZone, setSelectedTableFn, currentTable, zonesState
     if (currentTable.status === 'Закрыт') {
       setChangeMode(false);
     }
-  }, [orders, activeZone, currentTable, cashClosedTables]);
+    if (lokal) {
+      setLokalNumber(lokal)
+      currentTable.lokal = lokalNumber;
+    }
+  }, [orders, activeZone, currentTable, cashClosedTables, lokal]);
+
+  useEffect(() => {
+    
+  })
 
   useEffect(() => {
     get('zones').then(val => setZones(val));
   }, []);
-
+  
   const cashClosedHandler = () => {
     setSavedOrder(order);
-    const closedTable = { ...currentTable, status: 'Закрыт', order: order };
+    const closedTable = { ...currentTable, status: 'Закрыт', order: order, lokal: lokalNumber };
     setCashClosedTablesFn([...cashClosedTables, closedTable]);
     set('cashClosedTables', [...cashClosedTables, closedTable]);
     setModal(false);
@@ -304,7 +317,7 @@ function Bill({ orders, activeZone, setSelectedTableFn, currentTable, zonesState
 
   const cardClosedHandler = () => {
     setSavedOrder(order);
-    const closedTable2 = { ...currentTable, status: 'Закрыт', order: order };
+    const closedTable2 = { ...currentTable, status: 'Закрыт', order: order, lokal: lokalNumber };
     setCardClosedTablesFn([...cardClosedTables, closedTable2]);
     set('cardClosedTables', [...cardClosedTables, closedTable2]);
     setModal(false);
@@ -314,7 +327,10 @@ function Bill({ orders, activeZone, setSelectedTableFn, currentTable, zonesState
   const summary = order.reduce((accumulator, currentItem) => accumulator + currentItem.price * currentItem.quantity, 0);
   const tovSummary = order.reduce((acc, currentItem) => currentItem.alc ? acc + currentItem.price * currentItem.quantity : acc, 0);
 
-  const onAddCliclHandle = () => setOrderMode(true);
+  const onAddCliclHandle = () => {
+    setOrderMode(true);
+    setLokalModal(false);
+  }
   const onBackClickHandle = () => setOrderMode(false);
   const onChangeHandler = () => setChangeMode(true);
 
@@ -341,10 +357,14 @@ function Bill({ orders, activeZone, setSelectedTableFn, currentTable, zonesState
   const onSaveHandler = () => {
     if (zones) {
       const updatedZones = { ...zones };
+      setLokalNumber(lokalNumber);
       updatedZones[activeZone][currentTable.number - 1].order = order;
+      updatedZones[activeZone][currentTable.number - 1].lokal = lokalNumber;
       zonesState(updatedZones);
       set('zones', updatedZones).then(() => console.log('Setted'));
       setChangeMode(false);
+      setLokalModal(false);
+      setFocus(false);
     }
   };
 
@@ -353,6 +373,7 @@ function Bill({ orders, activeZone, setSelectedTableFn, currentTable, zonesState
       setOrder([]);
       const updatedZones = { ...zones };
       updatedZones[activeZone][currentTable.number - 1].order = [];
+      updatedZones[activeZone][currentTable.number - 1].lokal = null;
       zonesState(updatedZones);
       set('zones', updatedZones);
       setChangeMode(true);
@@ -360,17 +381,19 @@ function Bill({ orders, activeZone, setSelectedTableFn, currentTable, zonesState
     }
   };
 
-  // const onAddLocalHandler = (num) => {
-  //   setLocalModal(true);
-  //   const newZones = { ...zones };
-  //   newZones[activeZone][currentTable.number - 1].lokal = num;
-  //   zonesState(newZones);
-  //   set(zones[activeZone][currentTable.number - 1].lokal, num).then(() => {
-  //     console.log(zones);
-  //   }).catch((err) => {
-  //     console.error('Ошибка сохранения в IndexedDB:', err);
-  //   });
-  // }
+  const onAddLocalHandler = (num) => {
+    setLokalModal(true);
+    const newZones = { ...zones };
+    if (lokalNumber) {
+      newZones[activeZone][currentTable.number - 1].lokal = lokalNumber;
+      zonesState(newZones);
+    } else {
+      newZones[activeZone][currentTable.number - 1].lokal = num;
+      zonesState(newZones);
+    }
+    setChangeMode(true);
+    setFocus(true);
+  }
 
   // const onAddLocalHandler = (num) => {
   //   console.log("Начало функции onAddLocalHandler");
@@ -442,16 +465,29 @@ function Bill({ orders, activeZone, setSelectedTableFn, currentTable, zonesState
         <span className='bill-tov'>TOB: <span>{tovSummary} грн</span></span>
         <span className='bill-fop'>ФОП: <span>{summary - tovSummary} грн</span></span>
         <span className='bill-sum'>Разом: <span>{summary} грн</span></span>
+        {lokalNumber && <span className='bill-lokal'>Lokal: <span>{lokalNumber}</span></span>}
       </div>
-      <div className={currentTable.status === 'Закрыт' ? 'unvisible' : "bill-buttons bill-buttons right"}>
+      <div className={currentTable.status === 'Закрыт' ? 'unvisible' : "bill-buttons bill-buttons"}>
         <button className={!changeMode ? 'bill-check bill-btn visible' : 'bill-check bill-btn unvisible'} onClick={setModalHandler}>Рассчитать</button>
-        {/* <button 
-          className='bill-btn'
-          onClick={() => onAddLocalHandler(443654)}
-        >
-          Добавить Local
-        </button>
-        <p>{currentTable.lokal}</p> */}
+        {order.length ?
+          <div className='lokal-wrap'>
+            <button 
+              className='bill-btn lokal-btn'
+              onClick={() => onAddLocalHandler(lokalNumber)}
+            >
+              {lokalNumber ? 'Изменить Lokal' : 'Добавить Lokal'}
+            </button>
+            {lokalModal &&
+              <input
+                className='lokal-input'
+                value={lokalNumber || ''} 
+                type='number'
+                onChange={e => setLokalNumber(e.target.value)} 
+                autoFocus={focus}
+                onBlur={() => setFocus(false)}
+            />}
+        </div> : null
+        }
       </div>
       {orderMode && (
         <OrderZone onBack={onBackClickHandle} dataMenu={menuData.menu} orderArray={order} orderStateFn={setOrder} />

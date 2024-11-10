@@ -3,7 +3,7 @@ import './BillWorkSpace.css';
 import Bill from '../Bill/Bill';
 import BackBtn from '../BackBtn/BackBtn';
 
-const BillWorkspace = ({ activeZone, table, onBack, bill, zonesState, activeBottomTab, cashClosedTables, setCashClosedTables, cardClosedTables, setCardClosedTables, setSelectedTableFn }) => {
+const BillWorkspace = ({ activeZone, table, onBack, bill, zonesState, activeBottomTab, cashClosedTables, setCashClosedTables, cardClosedTables, setCardClosedTables, setSelectedTableFn, lokal }) => {
   
   const [newBill, setNewBill] = useState(false);
 
@@ -41,6 +41,7 @@ const BillWorkspace = ({ activeZone, table, onBack, bill, zonesState, activeBott
                   setCashClosedTablesFn={setCashClosedTables}
                   cardClosedTables={cardClosedTables}
                   setCardClosedTablesFn={setCardClosedTables}
+                  lokal={lokal}
             />
             <BackBtn 
               clickFn={onBack}
