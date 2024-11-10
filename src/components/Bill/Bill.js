@@ -71,7 +71,6 @@ function Bill({ orders, activeZone, setSelectedTableFn, currentTable, zonesState
   };
 
   const onMinusCliclHandle = (obj) => {
-    if (obj.quantity <= 0) return;
     obj.quantity -= 1;
     addToOrder(obj, setOrder);
   };
