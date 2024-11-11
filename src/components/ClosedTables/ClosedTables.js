@@ -13,6 +13,12 @@ function ClosedTables({cashClosedTables, cardClosedTables, cashClosedTablesFn, c
   const closeModalHandler = () => setModal(false);
   const keepModalHandler = (event) => event.stopPropagation();
 
+  useEffect(() => {
+    setCurrentCashTables(cashClosedTables)
+    setCurrentCardTables(cardClosedTables)
+    console.log(cashClosedTables)
+  }, [cashClosedTables, cardClosedTables])
+
   const onDelHandler = () => {
     cashClosedTablesFn([]);
     cardClosedTablesFn([]);
@@ -23,27 +29,29 @@ function ClosedTables({cashClosedTables, cardClosedTables, cashClosedTablesFn, c
     setModal(false);
   }
 
-  useEffect(() => {
-    setCurrentCashTables(cashClosedTables)
-    setCurrentCardTables(cardClosedTables)
-
-  }, [cashClosedTables, cardClosedTables])
   return (
     <>
       <div className="closed-headers">
         <div className="closed-cash closed-wrap">
           <h3 className="closed-hearder header-left">Готiвка</h3>
           {currentCashTables.length ? (
-            <TableMap 
-              tables={cashClosedTables}
-              onTableClick={onTableClick}
-              activeZone={activeZone}
-              classname={false}
-              style={{
-                padding: '20px 0 0 0',
-                background: 'none'
-              }}
-            />
+            <>
+              <div className='statist'> 
+                <span className='summary'>ФОП: <span>{cashClosedTables.reduce((acc, fopSum) => acc + fopSum.fop, 0)} грн</span></span>
+                <span className='summary'>ТОВ: <span>{cashClosedTables.reduce((acc, tovSum) => acc + tovSum.tov, 0)} грн</span></span>
+                <span className='summary summary-bold'>РАЗОМ: <span>{cashClosedTables.reduce((acc, summary) => acc + summary.summary, 0)} грн</span></span>
+              </div>
+              <TableMap 
+                tables={cashClosedTables}
+                onTableClick={onTableClick}
+                activeZone={activeZone}
+                classname={false}
+                style={{
+                  padding: '20px 0 0 0',
+                  background: 'none'
+                }}
+              />
+            </>
             ) : 
             null  
           }
@@ -51,16 +59,23 @@ function ClosedTables({cashClosedTables, cardClosedTables, cashClosedTablesFn, c
         <div className="closed-card closed-wrap">
           <h3 className="closed-hearder header-right">Картка</h3>
           {currentCardTables.length ? (
-            <TableMap 
-              tables={cardClosedTables}
-              onTableClick={onTableClick}
-              activeZone={activeZone}
-              classname={false}
-              style={{
-                padding: '20px 0 0 0',
-                background: 'none'
-              }}
-            />
+            <>
+              <div className='statist'>
+                <span className='summary'>ФОП: <span>{cardClosedTables.reduce((acc, fopSum) => acc + fopSum.fop, 0)} грн</span></span>
+                <span className='summary'>ТОВ: <span>{cardClosedTables.reduce((acc, tovSum) => acc + tovSum.tov, 0)} грн</span></span>
+                <span className='summary summary-bold'>РАЗОМ: <span className='summary-bold'>{cardClosedTables.reduce((acc, summary) => acc + summary.summary, 0)} грн</span></span>
+              </div>
+              <TableMap 
+                tables={cardClosedTables}
+                onTableClick={onTableClick}
+                activeZone={activeZone}
+                classname={false}
+                style={{
+                  padding: '20px 0 0 0',
+                  background: 'none'
+                }}
+              />
+            </>
             ) : 
             null  
           }

@@ -31,7 +31,7 @@ function Bill({ orders, activeZone, setSelectedTableFn, currentTable, zonesState
   
   const cashClosedHandler = () => {
     setSavedOrder(order);
-    const closedTable = { ...currentTable, status: 'Закрыт', order: order, lokal: lokalNumber };
+    const closedTable = { ...currentTable, status: 'Закрыт', order: order, lokal: lokalNumber, tov: tovSummary, fop: summary - tovSummary, summary };
     setCashClosedTablesFn([...cashClosedTables, closedTable]);
     set('cashClosedTables', [...cashClosedTables, closedTable]);
     setModal(false);
@@ -40,7 +40,7 @@ function Bill({ orders, activeZone, setSelectedTableFn, currentTable, zonesState
 
   const cardClosedHandler = () => {
     setSavedOrder(order);
-    const closedTable2 = { ...currentTable, status: 'Закрыт', order: order, lokal: lokalNumber };
+    const closedTable2 = { ...currentTable, status: 'Закрыт', order: order, lokal: lokalNumber, tov: tovSummary, fop: summary - tovSummary, summary };
     setCardClosedTablesFn([...cardClosedTables, closedTable2]);
     set('cardClosedTables', [...cardClosedTables, closedTable2]);
     setModal(false);
