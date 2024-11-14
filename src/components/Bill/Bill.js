@@ -19,6 +19,7 @@ function Bill({ orders, activeZone, setSelectedTableFn, currentTable, zonesState
     if (orders) {
       setOrder(orders);
       currentTable.order = orders;
+      setChangeMode(false);
     }
     if (currentTable.status === 'Закрыт') {
       setChangeMode(false);
