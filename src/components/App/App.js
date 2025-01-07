@@ -11,6 +11,10 @@ import { get, set} from 'idb-keyval'
 
 function App() {
   const initialZones = {
+    Лавка: [
+      { id: 121, number: 1, position: 'Лавка', status: 'available', lokal: null, order: [], specAttr: 'Готівка'},
+      { id: 122, number: 2, position: 'Лавка', status: 'available', lokal: null, order: [], specAttr: 'Картка'}
+    ],
     Зал: [
       { id: 1, number: 1, position: 'Зал', status: 'available', lokal: null, order: [] },
       { id: 2, number: 2, position: 'Зал', status: 'available', lokal: null, order: [] },
@@ -168,7 +172,7 @@ function App() {
     return savedCardClosedTables ? savedCardClosedTables : await set('cardClosedTables', []).then(() => setCardClosedTables([]))
   });
 
-  const [activeZone, setActiveZone] = useState('Зал');
+  const [activeZone, setActiveZone] = useState('Лавка');
   const [selectedTable, setSelectedTable] = useState(null);
   const [activeTables, setActiveTables] = useState([]);
   const [activeBottomTab, setActiveBottomTab] = useState('');
@@ -194,7 +198,7 @@ function App() {
       {zones ? ( 
         <div className="App-wrap">
         <Main 
-          activeZone={selectedTable ? `Стол ${selectedTable.number}` : activeZone}
+          activeZone={selectedTable ? (selectedTable.position === 'Лавка' ? selectedTable.specAttr : `Стол ${selectedTable.number}`) : activeZone}
           zones={Object.keys(zones)}
           onTabClick={handleTabClick}
           activeZone2={activeZone}

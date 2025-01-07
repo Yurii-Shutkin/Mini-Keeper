@@ -16,7 +16,7 @@ function Bill({ orders, activeZone, setSelectedTableFn, currentTable, zonesState
   const [focus, setFocus] = useState(false);
 
   useEffect(() => {
-    if (orders) {
+    if (orders.length) {
       setOrder(orders);
       currentTable.order = orders;
       setChangeMode(false);
@@ -24,6 +24,7 @@ function Bill({ orders, activeZone, setSelectedTableFn, currentTable, zonesState
     if (currentTable.status === 'Закрыт') {
       setChangeMode(false);
     }
+
   }, [currentTable, orders]);
 
   useEffect(() => {

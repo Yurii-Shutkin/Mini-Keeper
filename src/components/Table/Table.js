@@ -14,7 +14,8 @@ function Table( {table, onClick, activeZone} ) {
     >
       {table.status === 'Закрыт' ? (<p style={{fontSize: '14px'}}>{table.position}</p>): null}
       <p className='table-number'>
-        Стол {table.number}
+        {/* Стол {table.number} */}
+        {table.position === 'Лавка' ? table.specAttr : 'Стол ' + table.number}
       </p>
       <div className="table-desc-wrap">
         <p className='table-status'>
