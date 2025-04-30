@@ -11,10 +11,10 @@ import { get, set} from 'idb-keyval'
 
 function App() {
   const initialZones = {
-    Лавка: [
-      { id: 121, number: 1, position: 'Лавка', status: 'available', lokal: null, order: [], specAttr: 'Готівка'},
-      { id: 122, number: 2, position: 'Лавка', status: 'available', lokal: null, order: [], specAttr: 'Картка'}
-    ],
+    // Лавка: [
+    //   { id: 121, number: 1, position: 'Лавка', status: 'available', lokal: null, order: [], specAttr: 'Готівка'},
+    //   { id: 122, number: 2, position: 'Лавка', status: 'available', lokal: null, order: [], specAttr: 'Картка'}
+    // ],
     Зал: [
       { id: 1, number: 1, position: 'Зал', status: 'available', lokal: null, order: [] },
       { id: 2, number: 2, position: 'Зал', status: 'available', lokal: null, order: [] },

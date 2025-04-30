@@ -5,13 +5,13 @@
         {
           "id": 1,
           "name": "Ребра на вогнi",
-          "price": "299",
+          "price": "329",
           "quantity": 1
         },
         {
           "id": 2,
           "name": "Яловичий антрекот",
-          "price": "448",
+          "price": "478",
           "quantity": 1
         },
         {
@@ -23,65 +23,87 @@
       ],
       "Гарнiри": [
         {
+          "id": 432434234,
+          "name": "Кукурудза на грилі з сиром",
+          "price": "126",
+          "quantity": 1
+        },
+        {
           "id": 4,
           "name": "Картопля",
-          "price": "122",
+          "price": "148",
           "quantity": 1
         },
         {
           "id": 5,
           "name": "Овочi на грилi",
-          "price": "118",
+          "price": "146",
           "quantity": 1
         },
         {
           "id": 6,
           "name": "Паляничка",
-          "price": "46",
+          "price": "52",
           "quantity": 1
         },
         {
           "id": 7,
           "name": "Сир на грилi",
-          "price": "192",
+          "price": "228",
           "quantity": 1
         }
       ],
       "Десерти": [
         {
+          "id": 854352466,
+          "name": "Мочі Ваніль-Полуниця",
+          "price": "130",
+          "quantity": 1
+        },{
+          "id": 865462643,
+          "name": "Мочі Маракуя-Персик",
+          "price": "130",
+          "quantity": 1
+        },{
+          "id": 81235436436542,
+          "name": "Мочі Солона Карамель",
+          "price": "130",
+          "quantity": 1
+        },
+        {
           "id": 8,
           "name": "Морозиво бiле",
-          "price": "52",
+          "price": "66",
           "quantity": 1
         },
         {
           "id": 9,
           "name": "Морозиво бiле(2 кульки)",
-          "price": "88",
+          "price": "98",
           "quantity": 1
         },
         {
           "id": 10,
           "name": "Морозиво шоколадне",
-          "price": "52",
+          "price": "66",
           "quantity": 1
         },
         {
           "id": 11,
           "name": "Морозиво шоколадне(2 кульки)",
-          "price": "88",
+          "price": "98",
           "quantity": 1
         },
         {
           "id": 12,
           "name": "Морозиво мiкс",
-          "price": "88",
+          "price": "98",
           "quantity": 1
         },
         {
           "id": 13,
           "name": "Сирок в шоколаднiй глазурi",
-          "price": "98",
+          "price": "108",
           "quantity": 1
         }
       ],
@@ -89,69 +111,87 @@
         {
           "id": 14,
           "name": "Корн-дог з бананом",
-          "price": "94",
+          "price": "98",
           "quantity": 1
         },
         {
           "id": 15,
           "name": "Корн-дог з сиром",
-          "price": "94",
+          "price": "98",
           "quantity": 1
         },
         {
           "id": 16,
           "name": "Корн-дог з сосискою",
-          "price": "94",
+          "price": "98",
           "quantity": 1
         },
         {
           "id": 17,
           "name": "Куряче фiле гриль",
-          "price": "164",
+          "price": "172",
+          "quantity": 1
+        },
+        {
+          "id": 165658475434,
+          "name": "Бульйон курячий",
+          "price": "98",
           "quantity": 1
         }
       ],
       "Холоднi закуски": [
         {
+          "id": 23,
+          "name": "Салат капрезе",
+          "price": "218",
+          "quantity": 1
+        },
+        {
+          "id": 246547533,
+          "name": "Салат з огірків",
+          "price": "128",
+          "quantity": 1
+        },
+        {
+          "id": 2436456543,
+          "name": "Салат з печених перців",
+          "price": "218",
+          "quantity": 1
+        },
+        {
           "id": 18,
           "name": "Асортi овочеве",
-          "price": "148",
+          "price": "168",
           "quantity": 1
         },
         {
           "id": 19,
           "name": "Гливи маринованi",
-          "price": "98",
+          "price": "118",
           "quantity": 1
         },
         {
           "id": 20,
           "name": "Капуста Кiмчi",
-          "price": "82",
+          "price": "92",
           "quantity": 1
         },
         {
           "id": 21,
           "name": "Овочi маринованi",
-          "price": "148",
+          "price": "162",
           "quantity": 1
         },
         {
           "id": 22,
           "name": "Огiрки битi",
-          "price": "98",
-          "quantity": 1
-        },
-        {
-          "id": 23,
-          "name": "Салат з помидорiв",
-          "price": "98",
+          "price": "108",
           "quantity": 1
         },
         {
           "id": 24,
           "name": "Сир бринза маринована",
-          "price": "142",
+          "price": "162",
           "quantity": 1
         },
         {
@@ -165,19 +205,63 @@
         {
           "id": 26,
           "name": "Зупа м'ясна",
-          "price": "86",
+          "price": "98",
           "quantity": 1
         },
         {
           "id": 27,
           "name": "Овочевий бульон",
-          "price": "66",
+          "price": "76",
           "quantity": 1
         },
         {
           "id": 28,
           "name": "Азiйський бульон",
-          "price": "96",
+          "price": "98",
+          "quantity": 1
+        }
+      ],
+      "Соуси": [
+        {
+          "id": 265634575437,
+          "name": "Соус BBQ",
+          "price": "44",
+          "quantity": 1
+        },
+        {
+          "id": 2734436546,
+          "name": "Соус Гірчичний",
+          "price": "44",
+          "quantity": 1
+        },
+        {
+          "id": 234645624628,
+          "name": "Соус Азійський",
+          "price": "44",
+          "quantity": 1
+        },
+        {
+          "id": 273443436546,
+          "name": "Соус Журавлиний",
+          "price": "44",
+          "quantity": 1
+        },
+        {
+          "id": 2734432346546,
+          "name": "Соус Сметанковий",
+          "price": "44",
+          "quantity": 1
+        },
+        {
+          "id": 27545334436546,
+          "name": "Соус Пассата",
+          "price": "44",
+          "quantity": 1
+        },
+        {
+          "id": 2734474736546,
+          "name": "Соус до риби",
+          "price": "44",
           "quantity": 1
         }
       ]
@@ -189,14 +273,14 @@
             {
               "id": 31,
               "name": "Cesari, Pinot Grigio",
-              "price": "640",
+              "price": "720",
               "quantity": 1,
               "alc": true
             },
             {
               "id": 32,
               "name": "Petes Pure Pinot Noir",
-              "price": "680",
+              "price": "720",
               "quantity": 1,
               "alc": true
             },
@@ -217,28 +301,28 @@
             {
               "id": 37,
               "name": "Massotina Prosecco",
-              "price": "690",
+              "price": "720",
               "quantity": 1,
               "alc": true
             },
             {
               "id": 10000,
               "name": "Колоніст, Біссер",
-              "price": "960",
+              "price": "1100",
               "quantity": 1,
               "alc": true
             },
             {
               "id": 1002,
               "name": "Hugel, Gentil",
-              "price": "900",
+              "price": "920",
               "quantity": 1,
               "alc": true
             },
             {
               "id": 1003,
               "name": "Marlborough Sun",
-              "price": "690",
+              "price": "720",
               "quantity": 1,
               "alc": true
             },
@@ -255,76 +339,76 @@
               "price": "740",
               "quantity": 1,
               "alc": true
+            },
+            {
+              "id": 1032444326254605,
+              "name": "Вино My Wine Одеський чорний",
+              "price": "570",
+              "quantity": 1,
+              "alc": true
+            },
+            {
+              "id": 1034254325466475,
+              "name": "Вино My Wine Шардоне Резерв",
+              "price": "890",
+              "quantity": 1,
+              "alc": true
+            },
+            {
+              "id": 17983754367864235,
+              "name": "Shabo Limited Edition Ркацителі по-кахетинськи",
+              "price": "820",
+              "quantity": 1,
+              "alc": true
+            },
+            {
+              "id": 1436575475385,
+              "name": "Shabo Limited Edition Саперваві-Мерло",
+              "price": "820",
+              "quantity": 1,
+              "alc": true
             }
           ],
           "Вино розлив": [
             {
               "id": 39,
               "name": "Барон Бiле (125мл)",
-              "price": "98",
+              "price": "104",
               "quantity": 1,
               "alc": true
             },
             {
               "id": 40,
               "name": "Барон Червоне (125мл)",
-              "price": "98",
+              "price": "104",
               "quantity": 1,
               "alc": true
             },
             {
               "id": 41,
               "name": "Шабо Бiле (125мл)",
-              "price": "79",
+              "price": "92",
               "quantity": 1,
               "alc": true
             },
             {
               "id": 42,
               "name": "Шабо Червоне (125мл)",
-              "price": "79",
-              "quantity": 1,
-              "alc": true
-            },
-            {
-              "id": 43,
-              "name": "Барон Бiле (1л)",
-              "price": "784",
-              "quantity": 1,
-              "alc": true
-            },
-            {
-              "id": 44,
-              "name": "Барон Червоне (1л)",
-              "price": "784",
-              "quantity": 1,
-              "alc": true
-            },
-            {
-              "id": 45,
-              "name": "Шабо Бiле (1л)",
-              "price": "632",
-              "quantity": 1,
-              "alc": true
-            },
-            {
-              "id": 46,
-              "name": "Шабо Червоне (125мл)",
-              "price": "632",
+              "price": "92",
               "quantity": 1,
               "alc": true
             },
             {
               "id": 73,
               "name": "Сангрiя на червоному",
-              "price": "308",
+              "price": "328",
               "quantity": 1,
               "alc": true
             },
             {
               "id": 10001,
               "name": "Сангрiя на білому",
-              "price": "298",
+              "price": "328",
               "quantity": 1,
               "alc": true
             }
@@ -334,7 +418,7 @@
           {
             "id": 47,
             "name": "Ballantines (0,5л)",
-            "price": "1180",
+            "price": "1280",
             "quantity": 1,
             "alc": true
           },
@@ -348,42 +432,42 @@
           {
             "id": 49,
             "name": "Jack Daniels Orig (0,5л)",
-            "price": "1380",
+            "price": "1480",
             "quantity": 1,
             "alc": true
           },
           {
             "id": 50,
             "name": "Jack Daniels Honey (0,5л)",
-            "price": "1380",
+            "price": "1480",
             "quantity": 1,
             "alc": true
           },
           {
             "id": 51,
             "name": "Jameson (0,5л)",
-            "price": "1280",
+            "price": "1340",
             "quantity": 1,
             "alc": true
           },
           {
             "id": 52,
             "name": "Jameson (0,35л)",
-            "price": "890",
+            "price": "920",
             "quantity": 1,
             "alc": true
           },
           {
             "id": 53,
             "name": "Jim Beam (0,5л)",
-            "price": "1180",
+            "price": "1280",
             "quantity": 1,
             "alc": true
           },
           {
             "id": 54,
             "name": "Jim Beam (0,2л)",
-            "price": "480",
+            "price": "520",
             "quantity": 1,
             "alc": true
           }
@@ -392,35 +476,35 @@
           {
             "id": 55,
             "name": "Absolut (0,5л)",
-            "price": "720",
+            "price": "760",
             "quantity": 1,
             "alc": true
           },
           {
             "id": 56,
             "name": "Absolut Grapefruit (0,7л)",
-            "price": "880",
+            "price": "920",
             "quantity": 1,
             "alc": true
           },
           {
             "id": 57,
             "name": "Гетьман (0,5л)",
-            "price": "440",
+            "price": "480",
             "quantity": 1,
             "alc": true
           },
           {
             "id": 58,
             "name": "Гетьман (0,2л)",
-            "price": "190",
+            "price": "220",
             "quantity": 1,
             "alc": true
           },
           {
             "id": 59,
             "name": "Гетьман Українське Зерно (0,5л)",
-            "price": "440",
+            "price": "480",
             "quantity": 1,
             "alc": true
           }
@@ -429,14 +513,20 @@
           {
             "id": 60,
             "name": "Havana Club (0,5л)",
-            "price": "880",
+            "price": "920",
             "quantity": 1,
             "alc": true
           },
           {
             "id": 61,
             "name": "Olmeca (0,5л)",
-            "price": "920",
+            "price": "940",
+            "quantity": 1,
+            "alc": true
+          },{
+            "id": 621435464457451,
+            "name": "Stirling London Dry Gin (0,5л)",
+            "price": "728",
             "quantity": 1,
             "alc": true
           }
@@ -445,51 +535,37 @@
           {
             "id": 62,
             "name": "Shabo VSOP (0,5л)",
-            "price": "480",
+            "price": "520",
             "quantity": 1,
             "alc": true
           },
           {
             "id": 63,
             "name": "Shabo VSOP (0,25л)",
-            "price": "280",
+            "price": "320",
             "quantity": 1,
             "alc": true
           },
           {
             "id": 64,
             "name": "Арарат (0,5л)",
-            "price": "990",
-            "quantity": 1,
-            "alc": true
-          },
-          {
-            "id": 65,
-            "name": "Арарат (0,2л)",
-            "price": "490",
+            "price": "1100",
             "quantity": 1,
             "alc": true
           }
         ],
         "Настоянки": [
           {
-            "id": 66,
-            "name": "Вогень (0,2л)",
-            "price": "240",
-            "quantity": 1,
-            "alc": true
-          },
-          {
             "id": 67,
             "name": "Вогень (0,5л)",
-            "price": "480",
+            "price": "540",
             "quantity": 1,
             "alc": true
           },
           {
             "id": 68,
             "name": "Вогень (1л)",
-            "price": "810",
+            "price": "860",
             "quantity": 1,
             "alc": true
           },
@@ -510,42 +586,35 @@
           {
             "id": 76,
             "name": "П'яна Вишня (0,5л)",
-            "price": "348",
+            "price": "350",
             "quantity": 1,
             "alc": true
           },
           {
             "id": 77,
             "name": "П'яна Вишня (1л)",
-            "price": "636",
+            "price": "650",
             "quantity": 1,
             "alc": true
           },
           {
             "id": 69,
             "name": "Beherovka Unfiltered (0,5л)",
-            "price": "780",
+            "price": "820",
             "quantity": 1,
             "alc": true
           },
           {
             "id": 70,
             "name": "Beherovka Lemond (0,5л)",
-            "price": "780",
-            "quantity": 1,
-            "alc": true
-          },
-          {
-            "id": 71,
-            "name": "Jagermeister (0,5л)",
-            "price": "920",
+            "price": "820",
             "quantity": 1,
             "alc": true
           },
           {
             "id": 72,
-            "name": "Jagermeister (0,2л)",
-            "price": "390",
+            "name": "Бальзам Ruta (0,2л)",
+            "price": "570",
             "quantity": 1,
             "alc": true
           }
@@ -556,128 +625,177 @@
           {
             "id": 78,
             "name": "Lviv IPA (0,3л)",
-            "price": "102",
+            "price": "112",
             "quantity": 1,
             "alc": true
           },
           {
             "id": 79,
-            "name": "Lviv Pilsnes (0,3л)",
-            "price": "102",
+            "name": "Lviv Pilsner (0,3л)",
+            "price": "112",
             "quantity": 1,
             "alc": true
           },
           {
             "id": 80,
             "name": "Як тебе не любити? (0,3л)",
-            "price": "102",
+            "price": "112",
             "quantity": 1,
             "alc": true
           },
           {
             "id": 81,
             "name": "Micro IPA (0,3л)",
-            "price": "102",
+            "price": "112",
             "quantity": 1,
             "alc": true
           },
           {
             "id": 82,
             "name": "Заморочник (0,3л)",
-            "price": "102",
+            "price": "112",
             "quantity": 1,
             "alc": true
           },
           {
             "id": 83,
             "name": "Кебабця (0,3л)",
-            "price": "102",
+            "price": "112",
+            "quantity": 1,
+            "alc": true
+          },
+          {
+            "id": 834676843534265,
+            "name": "Борщ (0,3л)",
+            "price": "124",
+            "quantity": 1,
+            "alc": true
+          },
+          {
+            "id": 8321354365753735,
+            "name": "Tomato Beetroot Gose (0,3л)",
+            "price": "132",
+            "quantity": 1,
+            "alc": true
+          },
+          {
+            "id": 8323547672345,
+            "name": "Black IPA (0,3л)",
+            "price": "124",
+            "quantity": 1,
+            "alc": true
+          },
+          {
+            "id": 833465776456,
+            "name": "Brut IPA (0,3л)",
+            "price": "124",
             "quantity": 1,
             "alc": true
           }
         ],
         "Пляшка (0,33л)": [
           {
-            "id": 84,
-            "name": "Frau Ribbentrop (0,33л)",
-            "price": "102",
-            "quantity": 1,
-            "alc": true
-          },
-          {
             "id": 85,
             "name": "JohnsonUK (0,33л)",
-            "price": "102",
+            "price": "112",
             "quantity": 1,
             "alc": true
           },
           {
             "id": 86,
             "name": "Putin Huilo (0,33л)",
-            "price": "102",
+            "price": "112",
+            "quantity": 1,
+            "alc": true
+          },
+          {
+            "id": 8623325437687,
+            "name": "Сила (0,33л)",
+            "price": "112",
+            "quantity": 1,
+            "alc": true
+          },
+          {
+            "id": 8623325437687,
+            "name": "Кутя (0,33л)",
+            "price": "124",
+            "quantity": 1,
+            "alc": true
+          },
+          {
+            "id": 8676883237687,
+            "name": "Lviv Blanche (0,33л)",
+            "price": "108",
             "quantity": 1,
             "alc": true
           },
           {
             "id": 87,
-            "name": "ReBEERnya (0,33л)",
-            "price": "104",
+            "name": "Rye IPA(0,33л)",
+            "price": "114",
             "quantity": 1,
             "alc": true
           },
           {
             "id": 88,
-            "name": "Smoked Pilsnes (0,33л)",
-            "price": "104",
+            "name": "Smoked Pilsner (0,33л)",
+            "price": "114",
             "quantity": 1,
             "alc": true
           },
           {
             "id": 89,
             "name": "Wheat IPA (0,33л)",
-            "price": "104",
+            "price": "114",
             "quantity": 1,
             "alc": true
           },
           {
             "id": 10002,
-            "name": "Peach Sour (0,33л)",
-            "price": "104",
+            "name": "Spiced Ale (0,33л)",
+            "price": "114",
+            "quantity": 1,
+            "alc": true
+          },
+          {
+            "id": 84,
+            "name": "Peach Apricot sour (0,33л)",
+            "price": "114",
             "quantity": 1,
             "alc": true
           },
           {
             "id": 10003,
-            "name": "Grisette (0,33л)",
-            "price": "102",
+            "name": "Lviv Stout (0,33л)",
+            "price": "108",
             "quantity": 1,
             "alc": true
           },
           {
             "id": 90,
             "name": "Ґвара Смок (0,33л)",
-            "price": "102",
+            "price": "116",
             "quantity": 1,
             "alc": true
           },
           {
             "id": 91,
             "name": "Гребуча Корова (0,33л)",
-            "price": "102",
+            "price": "112",
             "quantity": 1,
             "alc": true
           },
           {
             "id": 92,
             "name": "Том Ям (0,33л)",
-            "price": "102",
+            "price": "112",
             "quantity": 1,
             "alc": true
           },
           {
             "id": 93,
             "name": "Червоні Очі (0,3л)",
-            "price": "102",
+            "price": "112",
             "quantity": 1,
             "alc": true
           }
@@ -686,49 +804,49 @@
           {
             "id": 94,
             "name": "Frau Ribbentrop (0,75л)",
-            "price": "198",
+            "price": "208",
             "quantity": 1,
             "alc": true
           },
           {
             "id": 95,
             "name": "Putin Huilo (0,75л)",
-            "price": "198",
+            "price": "208",
             "quantity": 1,
             "alc": true
           },
           {
             "id": 96,
             "name": "ReBEERnya (0,75л)",
-            "price": "198",
+            "price": "208",
             "quantity": 1,
             "alc": true
           },
           {
             "id": 97,
             "name": "Smoked Pilsner (0,75л)",
-            "price": "198",
-            "quantity": 1,
-            "alc": true
-          },
-          {
-            "id": 98,
-            "name": "What The Fruit? (0,75л)",
-            "price": "198",
+            "price": "208",
             "quantity": 1,
             "alc": true
           },
           {
             "id": 99,
             "name": "Гребуча Корова (0,75л)",
-            "price": "198",
+            "price": "208",
             "quantity": 1,
             "alc": true
           },
           {
             "id": 100,
             "name": "Червоні Очі (0,75л)",
-            "price": "198",
+            "price": "208",
+            "quantity": 1,
+            "alc": true
+          },
+          {
+            "id": 98,
+            "name": "Porter Leopolis (0,75л)",
+            "price": "236",
             "quantity": 1,
             "alc": true
           }
@@ -737,28 +855,35 @@
           {
             "id": 101,
             "name": "Lviv Blanche (0,33л)",
-            "price": "74",
+            "price": "86",
             "quantity": 1,
             "alc": true
           },
           {
             "id": 102,
             "name": "Lviv Dark Ale (0,33л)",
-            "price": "74",
+            "price": "86",
             "quantity": 1,
             "alc": true
           },
           {
             "id": 103,
             "name": "Milk Stout (0,33л)",
-            "price": "74",
+            "price": "86",
             "quantity": 1,
             "alc": true
           },
           {
             "id": 104,
             "name": "Зеник (0,33л)",
-            "price": "74",
+            "price": "86",
+            "quantity": 1,
+            "alc": true
+          },
+          {
+            "id": 103454354353,
+            "name": "Фацет (0,33л)",
+            "price": "86",
             "quantity": 1,
             "alc": true
           }
@@ -767,28 +892,35 @@
           {
             "id": 105,
             "name": "Lviv Blanche (0,5л)",
-            "price": "102",
+            "price": "110",
             "quantity": 1,
             "alc": true
           },
           {
             "id": 106,
             "name": "Lviv Dark Ale (0,5л)",
-            "price": "102",
+            "price": "110",
             "quantity": 1,
             "alc": true
           },
           {
             "id": 107,
             "name": "Milk Stout (0,5л)",
-            "price": "102",
+            "price": "110",
             "quantity": 1,
             "alc": true
           },
           {
             "id": 108,
             "name": "Зеник (0,5л)",
-            "price": "102",
+            "price": "110",
+            "quantity": 1,
+            "alc": true
+          },
+          {
+            "id": 103242315432568,
+            "name": "Фацет (0,5л)",
+            "price": "118",
             "quantity": 1,
             "alc": true
           }
@@ -797,7 +929,7 @@
           {
             "id": 111,
             "name": "Мудрий Страус Б/А (0,33л)",
-            "price": "98",
+            "price": "116",
             "quantity": 1,
             "alc": true
           }
@@ -808,7 +940,7 @@
           {
             "id": 112,
             "name": "Боржомі (0,33л)",
-            "price": "74",
+            "price": "78",
             "quantity": 1
           },
           {
@@ -862,31 +994,37 @@
           {
             "id": 145,
             "name": "Coca-Cola (0,25л)",
-            "price": "68",
+            "price": "74",
             "quantity": 1
           },
           {
             "id": 144,
             "name": "Coca-Cola Zero (0,25л)",
-            "price": "68",
+            "price": "74",
             "quantity": 1
           },
           {
             "id": 143,
             "name": "Sprite (0,25л)",
-            "price": "68",
+            "price": "74",
             "quantity": 1
           },
           {
             "id": 142,
             "name": "Fanta Orange (0,25л)",
-            "price": "68",
+            "price": "74",
             "quantity": 1
           },
           {
             "id": 141,
             "name": "Shweppes Indian Tonic (0,25л)",
-            "price": "68",
+            "price": "74",
+            "quantity": 1
+          },
+          {
+            "id": 1419872623,
+            "name": "Shweppes Granat (0,25л)",
+            "price": "74",
             "quantity": 1
           }
         ],
@@ -894,78 +1032,71 @@
           {
             "id": 138,
             "name": "Фільтр Кава (250мл)",
-            "price": "48",
+            "price": "62",
             "quantity": 1
           },
           {
             "id": 139,
             "name": "Чай (400мл)",
-            "price": "56",
+            "price": "62",
             "quantity": 1
-          },
-          {
-            "id": 10005,
-            "name": "Гаряча мов жар (200мл)",
-            "price": "126",
-            "quantity": 1,
-            "alc": true
           }
         ],
         "Соки": [
           {
             "id": 123,
             "name": "Jaffa Апельсин (0,25л)",
-            "price": "82",
+            "price": "88",
             "quantity": 1
           },
           {
             "id": 124,
             "name": "Jaffa Мультифрукт (0,25л)",
-            "price": "82",
+            "price": "88",
             "quantity": 1
           },
           {
             "id": 125,
             "name": "Jaffa Томат (0,25л)",
-            "price": "82",
+            "price": "88",
             "quantity": 1
           },
           {
             "id": 126,
             "name": "Галіція Ябл/Вишня (0,3л)",
-            "price": "82",
+            "price": "88",
             "quantity": 1
           },
           {
             "id": 127,
             "name": "Галіція Ябл/Чорниця (0,3л)",
-            "price": "82",
+            "price": "88",
             "quantity": 1
           },
           {
             "id": 128,
             "name": "Галіція Яблуко (0,3л)",
-            "price": "82",
+            "price": "88",
+            "quantity": 1
+          },
+          {
+            "id": 1232434645754378,
+            "name": "Сангріта (0,25л)",
+            "price": "98",
             "quantity": 1
           }
         ],
-        "Лимонади/Квас": [
+        "Лимонади": [
           {
             "id": 132,
             "name": "Лимонад Маліна (0,33л)",
-            "price": "82",
+            "price": "96",
             "quantity": 1
           },
           {
             "id": 133,
             "name": "Лимонад Чорниця (0,33л)",
-            "price": "82",
-            "quantity": 1
-          },
-          {
-            "id": 140,
-            "name": "Квас (0,5л)",
-            "price": "58",
+            "price": "96",
             "quantity": 1
           }
         ],
@@ -973,25 +1104,25 @@
           {
             "id": 134,
             "name": "Компот (1л)",
-            "price": "102",
+            "price": "118",
             "quantity": 1
           },
           {
             "id": 135,
             "name": "Фреш Апельсин (0,25л)",
-            "price": "122",
+            "price": "132",
             "quantity": 1
           },
           {
             "id": 136,
             "name": "Фреш Грейпфрут (0,25л)",
-            "price": "122",
+            "price": "132",
             "quantity": 1
           },
           {
             "id": 137,
             "name": "Фреш Яблуко (0,25л)",
-            "price": "92",
+            "price": "108",
             "quantity": 1
           }
         ]
